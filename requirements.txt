@@ -1,0 +1,14 @@
+# Core engine dependencies
+PyYAML==6.0.2
+SQLAlchemy==2.0.35
+python-dotenv==1.0.1
+
+# PostgreSQL execution support
+psycopg2-binary==2.9.9
+
+# LLM providers
+# Install anthropic for Claude direct API or AWS Bedrock usage.
+anthropic[bedrock]==0.45.0
+
+# Install openai for GPT/o-series model support.
+openai==1.68.0

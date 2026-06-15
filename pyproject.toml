@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semantic-query"
+version = "0.1.0"
+description = "A metadata-driven natural-language-to-SQL (Text-to-SQL) engine"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "PyYAML>=6.0.2",
+    "SQLAlchemy>=2.0.35",
+    "python-dotenv>=1.0.1",
+    "psycopg2-binary>=2.9.9",
+    "anthropic[bedrock]>=0.45.0",
+    "openai>=1.68.0",
+]
+
+[project.scripts]
+semantic-query = "semantic_query.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
