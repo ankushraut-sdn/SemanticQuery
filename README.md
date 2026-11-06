@@ -3,9 +3,7 @@
 ## 1. Project Overview
 
 **Project Name:** SemanticQuery
-**Project Type:** CLI / Backend (Python library + console tool)
 **Version:** 0.1.0 (from `pyproject.toml`)
-**Status:** Development
 
 ### Description
 
